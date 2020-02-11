@@ -2,7 +2,27 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>Currency Exchange</title>
+    <script src="script.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <div class="exchange">
+      <input id="amt" placeholder="0.00" />
+      <div class="currencies">
+        <select>
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+          <option value="JPY">JPY</option>
+        </select>
+        <span>to</span>
+        <select>
+          <option value="">USD</option>
+          <option value="">EUR</option>
+          <option value="">JPY</option>
+        </select>
+      </div>
+      <button>Convert</button>
+      <p id="output"></p>
+    </div>
+  </body>
 </html>
