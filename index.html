@@ -3,25 +3,31 @@
   <head>
     <meta charset="utf-8" />
     <title>Currency Exchange</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
     <script src="script.js" defer></script>
   </head>
   <body>
     <div class="exchange">
-      <input id="amt" placeholder="0.00" />
+      <input
+        onchange="setAmount(this)"
+        type="number"
+        id="amt"
+        placeholder="0.00"
+      />
       <div class="currencies">
-        <select>
-          <option value="USD">USD</option>
+        <select onchange="setFromCurrency(this)">
+          <option value="USD" selected>USD</option>
           <option value="EUR">EUR</option>
           <option value="JPY">JPY</option>
         </select>
         <span>to</span>
-        <select>
-          <option value="">USD</option>
-          <option value="">EUR</option>
-          <option value="">JPY</option>
+        <select onchange="setToCurrency(this)">
+          <option value="USD">USD</option>
+          <option value="EUR" selected>EUR</option>
+          <option value="JPY">JPY</option>
         </select>
       </div>
-      <button>Convert</button>
+      <button onclick="convert(this)">Convert</button>
       <p id="output"></p>
     </div>
   </body>
