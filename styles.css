@@ -1,0 +1,26 @@
+body {
+  background-color: #edf2f6;
+}
+
+.exchange {
+  background-color: white;
+}
+
+input {
+  border-color: #d7dee6;
+  padding: ;
+}
+
+button {
+  background-color: #058fff;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3ca8ff;
+}
+
+#output {
+  background-color: #f9f9f9;
+}
