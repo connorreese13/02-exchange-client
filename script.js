@@ -21,6 +21,7 @@ const convert = () => {
   axios
     .get(`http://localhost:4000/test?base=${from}&symbols=${to}&amt=${amt}`)
     .then(response => {
-      document.querySelector("#output").innerHTML = response.data.amt;
+      document.querySelector("#output").innerHTML =
+        `${to} ` + response.data.amt;
     });
 };
