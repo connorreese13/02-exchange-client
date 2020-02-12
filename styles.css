@@ -1,20 +1,56 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 body {
   background-color: #edf2f6;
 }
 
 .exchange {
   background-color: white;
+  margin: 100px auto;
+  padding: 30px;
+  width: 50%;
 }
 
 input {
   border-color: #d7dee6;
-  padding: ;
+  width: 100%;
+  font-size: 15px;
+  border-radius: 5px;
+  border
+}
+
+#amt {
+  padding: 10px;
+}
+
+.currencies {
+  margin: 5px 0px;
+  width: 100%;
+}
+
+select {
+  width: 45%;
+}
+
+span {
+  /* padding-left: 5px;
+  padding-right: 5px; */
+  width: 8%;
 }
 
 button {
   background-color: #058fff;
+  font-size: 15px;
   color: white;
   cursor: pointer;
+  margin: 5px 0px;
+  width: 100%;
+  padding: 15px 100px;
+  border-radius: 5px;
 }
 
 button:hover {
@@ -23,4 +59,6 @@ button:hover {
 
 #output {
   background-color: #f9f9f9;
+  width: 100%;
+  padding: 15px 100px 15px 20px;
 }
